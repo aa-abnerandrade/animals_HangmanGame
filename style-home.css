@@ -1,0 +1,62 @@
+/* ==================== CORPO TODO ========== */
+body { 
+    background-color: #F2F5F7;
+    font-family: 'Bungee', cursiva;
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+    background-color: #102538;
+}
+
+/* ================= CABECALHO =============== */
+
+
+
+
+
+
+/* ======================= HOME =============== */
+
+.home {
+    
+}
+
+
+
+
+
+/* ===================== BOTÕES ================  */
+
+button {
+    width: 100%;
+    height: auto;
+    margin: 10px auto;
+}
+
+button:hover {
+    font-weight: bold;
+	opacity: 0.99;
+    box-shadow: 0 0 5px #2e3456;
+    transform: scale(1.1);
+    transition: 400ms;
+}
+
+/* ================= RODAPÉ ===================== */
+
+footer {
+    
+}
+
+#links-do-desenvolvedor {
+    
+}
+
+#links-do-desenvolvedor img {
+    
+}
+
+#infos-do-desenvolvedor {
+    
+}
