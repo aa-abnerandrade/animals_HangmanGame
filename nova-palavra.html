@@ -15,13 +15,48 @@
    <body>
 
       <header class="cabecalho-home"> <!-- CABEÇALHO DO BODY-->
-         <div class="container">
+         <div class="container-cabecalho">
 
          	<img src="imagens/logo_alura.png" alt="Logo Alura, Letra A">
 
          </div>
-            
       </header>
-        
+      
+      <main>
+         <div class="container">
+
+            <section class="seção-digitarNovaPalavra">
+               <input type="text" id="novaPalavraDigitada">
+               <p>⚠ Maximo de 10 letras</p>
+               <div class="botoes-em-novaPalavra">
+                  <button id="botao-saveNewWord" onclick="salvarNovaPalavra(novaPalavraDigitada)">Salvar</button>
+                  <a href="index-home.html"><button id="botao-voltar">Cancelar</button></a>
+               </div>
+            </section>
+
+         </div>
+      </main>
+
+
+      <footer class="rodape-home"> <!-- ================= RODAPÉ >>>>>>> -->
+         <div class="container">
+
+            <div id="links-do-desenvolvedor">
+               <a href="https://github.com/aa-abnerandrade" target="_blank" ><img src="imagens/github150.png" alt="Logotipo do Github"></a>
+               <a href="https://www.linkedin.com/in/abnerandrade/" target="_blank"><img src="imagens/linkedin150.png" alt="Logotipo do Linkedin"></a>
+            </div>
+
+            <div id="infos-do-desenvolvedor">
+               <p>Desennvolvido por Abner Andrade</p>
+               <p>Aluno da turma 2 do Programa Oracle Next Education</p>
+            </div>
+
+         </div>
+     </footer> <!-- ================== FINAL RODAPÉ ^^^^^^^^^^^^ -->    
+
+
+     <!-- ============================== SCRIPT >>>>>>> -->
+    <script src="script-palavras.js"></script>
+
    </body>
 </html>

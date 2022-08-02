@@ -4,11 +4,21 @@ body {
     font-family: 'Bungee', cursiva;
 }
 
+.container-cabecalho {
+    width: 95%;
+    margin: 0 auto;
+    padding: 1rem 0;
+    background-color: #102538;
+}
+
 .container {
     width: 95%;
     margin: 0 auto;
     padding: 1rem 0;
     background-color: #102538;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
 }
 
 /* ================= CABECALHO =============== */
