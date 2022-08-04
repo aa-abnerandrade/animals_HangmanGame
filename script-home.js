@@ -16,6 +16,8 @@ function salvarNovaPalavra(novaPalavraDigitada) {
     alert("Palavra inserida!")
 }
 
+
+
 document.getElementById("novaPalavraDigitada").focus();
 
 
