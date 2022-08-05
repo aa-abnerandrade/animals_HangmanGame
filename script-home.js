@@ -1,11 +1,18 @@
 var palavras = ['ORACLE', 'ALURA', 'LINGUAGEM', 'JAVASCRIPT', 'CASCATA', 'DESAFIO', 'TRILHA', 'LOGICA', 'SOFTWARE'];
 
+function estructureGame(palavraSecreta) {
+    qtdletters = palavraSecreta.length;
+    console.log(qtdletters);
+    for (let cont = 0; cont < qtdletters; cont++) {
+        paintForca();
+    }
+}
 
-function startGame() {
+function raffleWord() {
     console.log(palavras);
 	var palavraSecreta = palavras[Math.floor(Math.random()*palavras.length)];
 	console.log(palavraSecreta);
-	return palavraSecreta;
+	estructureGame(palavraSecreta);
 }
 
 function validateNewWord(novaPalavraDigitada) {
@@ -23,8 +30,10 @@ function addNewWord(novaPalavraDigitada) {
     alert("Palavra inserida!")
 }
 
-
-
+const canvas = document.querySelector('canvas');
+const heightRadius = 1.14;
+canvas.height = canvas.width * heightRadius;
+const pincel = canvas.getContext('2d');
 
 
 

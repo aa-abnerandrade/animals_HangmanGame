@@ -2,12 +2,19 @@
 body { 
     background-color: #F2F5F7;
     font-family: 'Bungee', cursiva;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
 }
 
 main { 
-    margin: 1rem 0;
-    width: 99%;
+    margin: 1rem auto;
     height: 100%;
+    width: 99%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: stretch;
 }
 
 div {
@@ -17,18 +24,22 @@ div {
     background-color: #102538;
     display: flex;
     align-content: center;
-    justify-content: space-around;
+
 }
 
-.div-main {
-    padding: 15rem auto;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
+#div-main {
+    padding: 10rem 2px;
+    margin: 0 auto;
+    width: 99%;
+    position: relative;
 }
 
-#sec-game {
+
+
+section {
     background-color: #ffffff;
+    width: 99%;
+    position: absolute;
 }
 
 canvas {
@@ -59,6 +70,6 @@ button:hover {
 
 .invisivel {
     opacity: 0;
-    transform: scale(0.1);
+    transform: scale(0);
     transition: 400ms;
 }
