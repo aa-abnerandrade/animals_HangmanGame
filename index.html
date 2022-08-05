@@ -27,12 +27,30 @@
         <div class="div-main">
 
 
-            <!-- BOTÕES -->  
-            <section> 
-                <button>Novo Jogo</button>
-                <br>
-                <button>Adicionar Palavra</button>
+            <!-- INICIAL -->  
+            <section class="visivel" id="sec-home"> <!-- SEÇÃO HOME-->
+                <button onclick="loadGame()">Novo Jogo</button>
+                <p>
+                <button onclick="loadNewWord()">Adicionar Palavra</button>
             </section> 
+
+            <section class="invisivel" id="sec-game"> <!-- SEÇÃO GAME-->
+                <canvas>
+
+                </canvas>
+                
+                <button onclick="starGame()">Começar</button>
+                <button onclick="loadHome()">Desistir</button>
+            </section>
+
+            <section class="invisivel" id="sec-newword"> <!-- NOVA PALAVRA-->
+                <input maxlength="10" type="text" id="umaNovaPalavra">
+                <p>⚠ Maximo de 10 caracteres, sem acentuações</p>
+                
+                <hr>
+                <button onclick="validateNewWord(umaNovaPalavra)">Salvar</button>
+                <button onclick="loadHome()">Cancelar</button>
+            </section>
 
         </div>
     </main>
@@ -56,7 +74,9 @@
         </div>
     </footer> 
 
-
+    <script src="script-home.js"></script>
+    <script src="script-modulos.js"></script>
+    <script src="script-canvas.js"></script>
     
 </body>
 </html>

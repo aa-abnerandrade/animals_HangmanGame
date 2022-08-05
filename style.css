@@ -1,0 +1,64 @@
+/*GERAL*/
+body { 
+    background-color: #F2F5F7;
+    font-family: 'Bungee', cursiva;
+}
+
+main { 
+    margin: 1rem 0;
+    width: 99%;
+    height: 100%;
+}
+
+div {
+    width: 99%;
+    margin: 0 auto;
+    padding: 1rem 0;
+    background-color: #102538;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.div-main {
+    padding: 15rem auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+#sec-game {
+    background-color: #ffffff;
+}
+
+canvas {
+    max-width: 1200px;
+    max-height: 800px;
+}
+
+button {
+    font-family: 'Bungee', cursiva;
+    width: 40%;
+    height: auto;
+    margin: 10px auto;
+}
+
+button:hover {
+    font-weight: bold;
+	opacity: 0.99;
+    box-shadow: 0 0 5px #2e3456;
+    transform: scale(1.1);
+    transition: 400ms;
+}
+
+.visivel {
+    opacity: 100;
+    transform: scale(1.0);
+    transition: 400ms;
+}
+
+.invisivel {
+    opacity: 0;
+    transform: scale(0.1);
+    transition: 400ms;
+}

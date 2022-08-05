@@ -1,4 +1,5 @@
-var palavras = ['ORACLE', 'ALURA', 'HTML', 'JAVASCRIPT', 'CSS', 'DESAFIO', 'TRILHA', 'LOGICA', 'SOFTWARE']
+var palavras = ['ORACLE', 'ALURA', 'LINGUAGEM', 'JAVASCRIPT', 'CASCATA', 'DESAFIO', 'TRILHA', 'LOGICA', 'SOFTWARE'];
+
 
 function startGame() {
     console.log(palavras);
@@ -7,8 +8,14 @@ function startGame() {
 	return palavraSecreta;
 }
 
-function salvarNovaPalavra(novaPalavraDigitada) {
-    var palavraDigitada = document.getElementById("novaPalavraDigitada");
+function validateNewWord(novaPalavraDigitada) {
+    var palavraDigitada = document.getElementById("umaNovaPalavra");
+    palavraDigitada = palavraDigitada.value;
+    palavraDigitada = palavraDigitada.toUpperCase();
+}
+
+function addNewWord(novaPalavraDigitada) {
+    var palavraDigitada = document.getElementById("umaNovaPalavra");
     palavraDigitada = palavraDigitada.value;
     palavraDigitada = palavraDigitada.toUpperCase();
     palavras.push(palavraDigitada)
@@ -17,8 +24,6 @@ function salvarNovaPalavra(novaPalavraDigitada) {
 }
 
 
-
-document.getElementById("novaPalavraDigitada").focus();
 
 
 
