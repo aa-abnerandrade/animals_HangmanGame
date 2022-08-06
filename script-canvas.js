@@ -1,12 +1,12 @@
 function paintForca() {
   pincel.fillStyle = '#102538'
-  pincel.fillRect(0, 0, 3, 240)
+  pincel.fillRect(10, 10, 10, 200)
 
   pincel.fillStyle = '#102538'
-  pincel.fillRect(0, 0, 151, 3)
+  pincel.fillRect(10, 10, 100, 10)
 
   pincel.fillStyle = '#102538'
-  pincel.fillRect(147.5, 3, 3, 32)
+  pincel.fillRect(110, 10, 10, 20)
 }
 
 

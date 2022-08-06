@@ -30,17 +30,23 @@
             <!-- INICIAL -->  
             <section class="visivel" id="sec-home"> <!-- SEÇÃO HOME-->
                 <button onclick="loadGame()">Novo Jogo</button>
-                <p>
+    
                 <button onclick="loadNewWord()">Adicionar Palavra</button>
             </section> 
 
             <section class="invisivel" id="sec-game"> <!-- SEÇÃO GAME-->
-                <canvas>
+                <section id="tabuleiro">
+                    <canvas width="100" height="200">
                     
-                </canvas>
+                    </canvas>
+                    <textarea name="" class="letras" cols="180" rows="1">Teste</textarea>
+                </section>
                 
-                <button onclick="raffleWord()">Começar</button>
-                <button onclick="loadHome()">Desistir</button>
+                <div id="botoes-start">
+                    <button onclick="estructureGame()">Começar</button>
+                    <button onclick="loadHome()">Desistir</button>
+                </div>
+                
             </section>
 
             <section class="invisivel" id="sec-newword"> <!-- NOVA PALAVRA-->

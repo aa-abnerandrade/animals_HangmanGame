@@ -7,15 +7,6 @@ body {
     align-content: center;
 }
 
-main { 
-    margin: 1rem auto;
-    height: 100%;
-    width: 99%;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: stretch;
-}
 
 div {
     width: 99%;
@@ -24,34 +15,47 @@ div {
     background-color: #102538;
     display: flex;
     align-content: center;
-
 }
 
 #div-main {
-    padding: 10rem 2px;
-    margin: 0 auto;
+    padding: 1rem 0;
+    background-color: #1025AA;
+    height: 20rem;
     width: 99%;
-    position: relative;
+    position: static;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
 }
-
-
-
 section {
-    background-color: #ffffff;
-    width: 99%;
+    /*background-color: #ffffff;*/
+    width: 99%;    
     position: absolute;
 }
 
-canvas {
-    max-width: 1200px;
-    max-height: 800px;
+#sec-game {
+    width: 99%;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+}
+
+#tabuleiro {
+    position: static;
 }
 
 button {
     font-family: 'Bungee', cursiva;
-    width: 40%;
+    width: 30%;
     height: auto;
-    margin: 10px auto;
+    margin: 1rem 10px;
+    display: block;
+}
+
+#botao-start {
+    height: 800;
+    float: inline-end;
 }
 
 button:hover {
@@ -61,6 +65,7 @@ button:hover {
     transform: scale(1.1);
     transition: 400ms;
 }
+
 
 .visivel {
     opacity: 100;
