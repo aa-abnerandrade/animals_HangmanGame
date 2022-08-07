@@ -44,4 +44,6 @@ function loadNewWord() {
     let sectionGame = document.getElementById("sec-game");
     sectionGame.classList.remove('visivel');
     sectionGame.classList.add('invisivel');
+
+    document.getElementById("umaNovaPalavra").focus(); 
 }

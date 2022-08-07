@@ -35,11 +35,11 @@
             </section> 
 
             <section class="invisivel" id="sec-game"> <!-- SEÇÃO GAME-->
-                <section id="tabuleiro">
+                <section id="area-tabuleiro">
                     <canvas width="100" height="200">
                     
                     </canvas>
-                    <textarea name="" class="letras" cols="180" rows="1">Teste</textarea>
+                    <input type="text" id="letras">
                 </section>
                 
                 <div id="botoes-start">
@@ -50,12 +50,12 @@
             </section>
 
             <section class="invisivel" id="sec-newword"> <!-- NOVA PALAVRA-->
-                <input maxlength="10" type="text" id="umaNovaPalavra">
+                <input type="text" name="" id="umaNovaPalavra">
                 <p>⚠ Maximo de 10 caracteres, sem acentuações</p>
                 
                 <hr>
-                <button onclick="validateNewWord(umaNovaPalavra)">Salvar</button>
-                <button onclick="loadHome()">Cancelar</button>
+                <button onclick="validateNewWord()">Salvar</button>
+                <button onclick="loadHome()">Voltar</button>
             </section>
 
         </div>
