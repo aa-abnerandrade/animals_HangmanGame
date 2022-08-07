@@ -1,0 +1,24 @@
+var inputsErrados = []; 
+var inputsCertos = [];
+
+function game() {
+    document.addEventListener("keydown", (teclado) => {
+        const codigoL = teclado.keyCode
+        console.log(codigoL);
+        
+        if (isLetra(codigoL)) {
+            const letraDigitada = teclado.key;
+         
+            if (inputsErrados.includes(letraDigitada)) {
+                avisarLetraRepetida();
+            } else {
+                if (palavraSecreta.includes(letraDigitada)) {
+                    inputsCertos.push(letraDigitada);
+                } else {
+                    inputsErrados.push(letraDigitada);
+                }
+            }
+          atualizarJogo();
+        }
+    });
+}

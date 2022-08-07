@@ -15,26 +15,6 @@ function criarCampos(palavraSecreta) {
 
 function isLetra(codigoL) {
     return codigoL >= 65 && codigoL <= 90;
-  }
-
-function game() {
-    document.addEventListener("keydown", (teclado) => {
-        const codigoL = teclado.keyCode; 
-        if (isLetra(codigoL)) {
-            const letraDigitada = teclado.key;
-         
-            if (letrasErradas.includes(letraDigitada)) {
-                mostrarAvisoLetraRepetida();
-            } else {
-            if (palavraSecreta.includes(letra)) {
-                letrasCorretas.push(letra);
-            } else {
-                letrasErradas.push(letra);
-            }
-            }
-          atualizarJogo();
-        }
-      });
 }
 
 function estructureGame() {
@@ -42,16 +22,16 @@ function estructureGame() {
     qtdletters = palavraSecreta.length;
     console.log(qtdletters);
     paintForca();
+    console.log("AtéPaintForca");
     criarCampos(palavraSecreta);
+    console.log("AtéPalavraSecreta");
     game();
 }
 
-
 function validateNewWord() {
-    const umaNovaPalavra = document.getElementById("umaNovaPalavra");
-    const input = umaNovaPalavra.value;
-    const palavraValidada = input.toUpperCase();
-    //console.log(palavraValidada);
+    const umaNovaPalavra = document.getElementById("umaNovaPalavra").value;
+    const palavraValidada = umaNovaPalavra.toUpperCase();
+    console.log(palavraValidada);
     addNewWord(palavraValidada);
 }
 
@@ -59,7 +39,9 @@ function addNewWord(palavraValidada) {
     const novaPalavra = palavraValidada
     bancoPalavras.push(novaPalavra);
     // console.log(bancoPalavras);
-    alert("Palavra inserida!")
+    alert("Palavra inserida!");
+    document.getElementById("umaNovaPalavra").value = '';
+    loadHome();
 }
 
 var tela = document.querySelector('canvas');
