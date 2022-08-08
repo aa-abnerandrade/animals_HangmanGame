@@ -23,7 +23,7 @@ function estructureGame() {
     console.log(qtdletters);
     paintForca();
     console.log("AtéPaintForca");
-    criarCampos(palavraSecreta);
+    // criarCampos(palavraSecreta);
     console.log("AtéPalavraSecreta");
     game();
 }
