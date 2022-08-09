@@ -2,41 +2,63 @@ var inputsErrados = [];
 var inputsCertos = [];
 
 function avisarLetraRepetida() {
-    let aviso = document.getElementById("aviso-LetraRepetida")
+    let aviso = document.querySelector("#aviso-LetraRepetida")
     console.log(aviso);
     aviso.classList.remove('invisivel');
     aviso.classList.add('visivel');
     setTimeout(() => {
-        aviso.classList.remove("visivel");
+        aviso.classList.add("invisivel");
     }, 2000);
-    aviso.classList.add('invisivel');
+}
+
+function exibirLetrasErradas() {
+    let areaLE = document.querySelector("#container-LetrasErradas");
+    areaLE.innerHTML = "<h3>Letras erradas</h3>";
+    inputsErrados.forEach((letraDigitada) => {
+        areaLE.innerHTML += `<span>${letraDigitada}</span>`;
+    });
+}
+
+function exibirLetrasCertas() {
+    let areaPS = document.querySelector('#container-PalavraSecreta');
+    areaPS.innerHTML = "";
+    palavraSecreta.split("").forEach((letraDigitada) => {
+        if (inputsCertos.includes(letraDigitada)) {
+          areaPS.innerHTML += `<span>${letraDigitada}</span>`;
+        } else {
+          areaPS.innerHTML += `<span>_</span>`;
+        }
+    });
 }
 
 function updateGame() {
+    exibirLetrasErradas();
+    exibirLetrasCertas();
 
 }
 
 function game() {
     document.addEventListener("keydown", (teclado) => {
         let codigoL = teclado.keyCode;
-        console.log(codigoL);
         
         if (isLetra(codigoL)) {
-            let letraDigitada = teclado.key;
+            let LD = teclado.key;
+            let letraDigitada = LD.toUpperCase();
             console.log(letraDigitada);
-            console.log(inputsCertos);
-            console.log(inputsErrados);
 
-            if (inputsErrados.includes(letraDigitada)) {
+            if (inputsErrados.includes(letraDigitada) || inputsCertos.includes(letraDigitada)) {
                 avisarLetraRepetida();
+                console.log("Identifica Letra Repetida");
             } else {
                 if (palavraSecreta.includes(letraDigitada)) {
                     inputsCertos.push(letraDigitada);
+                    console.log("Letra sobe para inputsCertos");
                 } else {
                     inputsErrados.push(letraDigitada);
+                    console.log("Letra sobe para inputsErrados");
                 }
             }
-          updateGame();
+    updateGame();
         }
     });
 }

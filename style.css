@@ -54,8 +54,8 @@ button {
 }
 
 #botao-start {
+    margin-top: 250px;
     height: 800;
-    float: inline-end;
 }
 
 button:hover {

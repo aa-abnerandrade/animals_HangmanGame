@@ -12,7 +12,6 @@ function loadHome() {
     let sectionNewword = document.getElementById("sec-newword");
     sectionNewword.classList.remove('visivel');
     sectionNewword.classList.add('invisivel');
-
 }
 
 function loadGame() {
@@ -29,9 +28,6 @@ function loadGame() {
     let sectionNewword = document.getElementById("sec-newword");
     sectionNewword.classList.remove('visivel');
     sectionNewword.classList.add('invisivel');
-
-    document.getElementById("umaNovaPalavra").focus(); 
-
 }
 
 function loadNewWord() {
@@ -49,5 +45,5 @@ function loadNewWord() {
     sectionGame.classList.remove('visivel');
     sectionGame.classList.add('invisivel');
 
-    document.getElementById("umaNovaPalavra").focus(); 
+    document.getElementById('umaNovaPalavra').focus(); 
 }
