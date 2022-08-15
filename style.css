@@ -8,7 +8,7 @@ body {
 }
 
 
-div {
+#div-cabecalho, #div-rodape {
     width: 99%;
     margin: 0 auto;
     padding: 1rem 0;
@@ -22,28 +22,34 @@ div {
     background-color: #1025AA;
     height: 20rem;
     width: 99%;
-    position: static;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    display: flex;
-    flex-direction: column;
 }
+
+/*
 section {
-    /*background-color: #ffffff;*/
     width: 99%;    
     position: absolute;
 }
 
 #sec-game {
     width: 99%;
-    display: flex;
-    align-content: center;
-    flex-direction: column;
+    display: block;
 }
 
 #area-tabuleiro {
-    position: static;
+    width: 99%;
+    background-color: #F2F5F7;
 }
+*/
+
+#container-PalavraSecreta {
+    color: #F2F5F7;
+    font-size: 25px;
+    display: block;
+} 
+
+
 
 button {
     font-family: 'Bungee', cursiva;
@@ -54,8 +60,9 @@ button {
 }
 
 #botao-start {
-    margin-top: 250px;
+    margin-top: 200px;
     height: 800;
+    display: block;
 }
 
 button:hover {

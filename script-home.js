@@ -37,8 +37,8 @@ function addNewWord(palavraValidada) {
 
 var tela = document.querySelector('canvas');
 var pincel = tela.getContext('2d');
-var heightRadius = 1.14;
-tela.height = tela.width * heightRadius;
+// var heightRadius = 1.14;
+// tela.height = tela.width * heightRadius;
 
 
 

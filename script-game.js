@@ -31,10 +31,14 @@ function exibirLetrasCertas() {
     });
 }
 
+function completeForca() {
+    
+}
+
 function updateGame() {
     exibirLetrasErradas();
     exibirLetrasCertas();
-
+    completeForca();
 }
 
 function game() {

@@ -1,59 +1,54 @@
 function paintForca() {
-  pincel.fillStyle = '#102538'
+
+  /*MADEIRA*/
+  pincel.fillStyle = '#ffffff'
   pincel.fillRect(10, 10, 10, 200)
 
-  pincel.fillStyle = '#102538'
+  pincel.fillStyle = '#ffffff'
   pincel.fillRect(10, 10, 100, 10)
 
-  pincel.fillStyle = '#102538'
+  pincel.fillStyle = '#ffffff'
   pincel.fillRect(110, 10, 10, 20)
-}
 
-
-function paintCabeca() {
-  pincel.fillStyle = '#102538'
+  /* CABEÇA */
+  pincel.strokeStyle = '#ffffff'
   pincel.beginPath()
-  pincel.arc(150, 55, 20, 0, 2 * Math.PI)
+  pincel.arc(115, 60, 20, 0, 10*Math.PI)
   pincel.stroke()
-}
 
-function paintTronco() {
-  pincel.fillStyle = '#102538'
-  pincel.fillRect(149, 75, 2, 100)
-}
-
-function paintBracoD() {
-  pincel.fillStyle = '#102538'
+  /* TRONCO */
+  pincel.fillStyle = '#ffffff'
+  pincel.fillRect(112, 80, 3, 80)
+  
+  /* Braço Esquerdo */ 
+  pincel.fillStyle = '#ffffff'
   pincel.beginPath()
-  pincel.moveTo(151, 90)
-  pincel.lineTo(181, 120)
+  pincel.moveTo(115, 91)
+  pincel.lineTo(145, 110)
   pincel.closePath()
   pincel.stroke()
-}
 
-function paintBracoE() {
-  pincel.fillStyle = '#102538'
+  /* Braço Direito */
+  pincel.fillStyle = '#ffffff'
   pincel.beginPath()
-  pincel.moveTo(149, 90)
-  pincel.lineTo(119, 120)
+  pincel.moveTo(113, 90)
+  pincel.lineTo(85, 110)
   pincel.closePath()
   pincel.stroke()
-}
 
-function paintPernaD() {
-  pincel.fillStyle = '#102538'
+  /* Perna Esquerda */
+  pincel.fillStyle = '#ffffff'
   pincel.beginPath()
-  pincel.moveTo(151, 175)
-  pincel.lineTo(181, 205)
+  pincel.moveTo(115, 160)
+  pincel.lineTo(150, 178)
   pincel.closePath()
   pincel.stroke()
-}
 
-function paintPernaE() {
-  pincel.fillStyle = '#102538'
+  /* Perna Direita */
+  pincel.fillStyle = '#ffffff'
   pincel.beginPath()
-  pincel.moveTo(149, 175)
-  pincel.lineTo(119, 205)
+  pincel.moveTo(78, 178)
+  pincel.lineTo(112, 160)
   pincel.closePath()
   pincel.stroke()
 }
