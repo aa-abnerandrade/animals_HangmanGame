@@ -36,8 +36,71 @@
 
             <section class="invisivel" id="sec-game"> <!-- SEÇÃO GAME-->
                 <section id="area-tabuleiro">
-                    <canvas width="200" height="200">
-                    
+                    <canvas height="200" width="400" id="desenho-forca">
+                        <script>
+                            var tela = document.querySelector('canvas');
+                            var pincel = tela.getContext('2d');
+                            // var heightRadius = 1.14; 
+                            // tela.height = tela.width * heightRadius;
+
+                            /*MADEIRA*/
+                            pincel.fillStyle = '#102538'
+                            pincel.fillRect(10, 10, 10, 200)
+
+                            pincel.fillStyle = '#102538'
+                            pincel.fillRect(10, 10, 100, 10)
+
+                            pincel.fillStyle = '#102538'
+                            pincel.fillRect(110, 10, 10, 20)
+                        </script>
+                        <script class="forca-membro">
+                            /* CABEÇA */
+                            pincel.strokeStyle = '#102538'
+                            pincel.beginPath()
+                            pincel.arc(115, 60, 20, 0, 10*Math.PI)
+                            pincel.stroke()
+                        </script>
+                        <script class="forca-membro">
+                            /* TRONCO */
+                            pincel.fillStyle = '#102538'
+                            pincel.fillRect(112, 80, 3, 80)
+                        </script>
+                        <script class="forca-membro">    
+                            /* Braço Esquerdo */ 
+                            pincel.fillStyle = '#102538'
+                            pincel.beginPath()
+                            pincel.moveTo(115, 91)
+                            pincel.lineTo(145, 110)
+                            pincel.closePath()
+                            pincel.stroke()
+                        </script>
+                        <script class="forca-membro">
+                            /* Braço Direito */
+                            pincel.fillStyle = '#102538'
+                            pincel.beginPath()
+                            pincel.moveTo(113, 90)
+                            pincel.lineTo(85, 110)
+                            pincel.closePath()
+                            pincel.stroke()
+                        </script>
+                        <script class="forca-membro">
+                            /* Perna Esquerda */
+                            pincel.fillStyle = '#102538'
+                            pincel.beginPath()
+                            pincel.moveTo(115, 160)
+                            pincel.lineTo(150, 178)
+                            pincel.closePath()
+                            pincel.stroke()
+                        </script>
+                        <script class="forca-membro">
+                            /* Perna Direita */
+                            pincel.fillStyle = '#102538'
+                            pincel.beginPath()
+                            pincel.moveTo(78, 178)
+                            pincel.lineTo(112, 160)
+                            pincel.closePath()
+                            pincel.stroke()
+                        </script>
                     </canvas>
 
                     <div id="container-PalavraSecreta"></div>

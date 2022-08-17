@@ -15,7 +15,7 @@ function estructureGame() {
     palavraSecreta = raffleWord();
     qtdletters = palavraSecreta.length;
     console.log(qtdletters);
-    paintForca();
+    //paintForca();
     game();
 }
 
@@ -35,10 +35,7 @@ function addNewWord(palavraValidada) {
     loadHome();
 }
 
-var tela = document.querySelector('canvas');
-var pincel = tela.getContext('2d');
-// var heightRadius = 1.14;
-// tela.height = tela.width * heightRadius;
+
 
 
 

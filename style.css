@@ -1,29 +1,49 @@
 /*GERAL*/
+
 body { 
     background-color: #F2F5F7;
     font-family: 'Bungee', cursiva;
     display: flex;
     flex-direction: column;
-    align-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
 }
-
 
 #div-cabecalho, #div-rodape {
     width: 99%;
     margin: 0 auto;
     padding: 1rem 0;
     background-color: #102538;
+    
+}
+
+#area-tabuleiro {
+    background-color: #F2F5F7;
     display: flex;
-    align-content: center;
+    justify-content: space-evenly;
+    width: 99%;
+}
+
+script .forca-membro {
+    opacity: 0;
 }
 
 #div-main {
     padding: 1rem 0;
     background-color: #1025AA;
-    height: 20rem;
     width: 99%;
+    height: 100%;
     margin-top: 1rem;
     margin-bottom: 1rem;
+}
+
+/*
+#desenho-forca {
+    fill: transparent;
+    stroke: #000000;
+    stroke-width: 4px;
+    stroke-linecap: round;
 }
 
 /*
@@ -37,11 +57,8 @@ section {
     display: block;
 }
 
-#area-tabuleiro {
-    width: 99%;
-    background-color: #F2F5F7;
-}
-*/
+
+
 
 #container-PalavraSecreta {
     color: #F2F5F7;
@@ -85,3 +102,4 @@ button:hover {
     transform: scale(0);
     transition: 400ms;
 }
+*/
