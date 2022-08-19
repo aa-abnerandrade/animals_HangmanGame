@@ -31,11 +31,29 @@ function exibirLetrasCertas() {
     });
 }
 
+function checkGame() {
+    let advEndGame = '';
+    let areaPS = document.querySelector('#container-PalavraSecreta');
+
+    if (inputsErrados.length == funcoesCanva.length) {
+        advEndGame = "Que pena, você perdeu!";
+    }
+
+    if (areaPS.innerText == palavraSecreta) {
+        advEndGame = "Parabéns! Você venceu!"
+    }
+
+    if (advEndGame) {
+        document.querySelector("#advice").innerHTML = advEndGame;
+        document.querySelector("#popup-container").style.display = "flex";
+    }
+}
 
 function updateGame() {
     exibirLetrasErradas();
     exibirLetrasCertas();
     paintForca();
+    checkGame();
     console.log("Função UpdateGame");
 }
 

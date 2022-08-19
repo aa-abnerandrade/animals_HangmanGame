@@ -1,64 +1,40 @@
 /*GERAL*/
 
 body { 
-    background-color: #F2F5F7;
+    background-color: #D9E7FC;
     font-family: 'Bungee', cursiva;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
 }
 
 #div-cabecalho, #div-rodape {
+    display: inline-block;
+    position: static;
     width: 99%;
-    margin: 0 auto;
-    padding: 1rem 0;
-    background-color: #102538;
-    
+    margin: 0;
+    padding: 1rem;
+    background-color: #D9E7FC;
 }
 
-#area-tabuleiro {
-    background-color: #F2F5F7;
-    display: flex;
-    justify-content: space-evenly;
-    width: 99%;
-}
-
-script .forca-membro {
-    opacity: 0;
+#div-cabecalho img {
+    margin: auto 1rem;
 }
 
 #div-main {
+    background-color: #D9E7FC;
     padding: 1rem 0;
-    background-color: #1025AA;
-    width: 99%;
-    height: 100%;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70vh;
 }
 
-/*
 #desenho-forca {
-    fill: transparent;
-    stroke: #000000;
-    stroke-width: 4px;
-    stroke-linecap: round;
+    background-color: #D9E7FC;
+    display: inline-block;
 }
-
-/*
-section {
-    width: 99%;    
-    position: absolute;
-}
-
-#sec-game {
-    width: 99%;
-    display: block;
-}
-
-
-
 
 #container-PalavraSecreta {
     color: #F2F5F7;
@@ -66,20 +42,56 @@ section {
     display: block;
 } 
 
+section #div-main {
+    width: 100%;    
+    position: absolute;
+}
 
+#popup-container {
+    background-color: #F2F5F7;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+#popup-conteudo {
+    background: #102538;
+    border-radius: 5px;
+    box-shadow: 0 15px 10px 3px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+#div-rodape {
+    background-color: #102538;
+    color: #F2F5F7;
+}
+
+.visivel {
+    opacity: 100;
+    transform: scale(1.0);
+    transition: 400ms;
+}
+
+.invisivel {
+    display: none;
+    transform: scale(0);
+    transition: 400ms;
+}
 
 button {
     font-family: 'Bungee', cursiva;
-    width: 30%;
+    color: #F2F5F7;
+    background-color: #102538;
+    width: auto;
     height: auto;
     margin: 1rem 10px;
-    display: block;
-}
-
-#botao-start {
-    margin-top: 200px;
-    height: 800;
-    display: block;
+    display: inline-block;
 }
 
 button:hover {
@@ -91,15 +103,13 @@ button:hover {
 }
 
 
-.visivel {
-    opacity: 100;
-    transform: scale(1.0);
-    transition: 400ms;
+/*
+#desenho-forca {
+    fill: transparent;
+    stroke: #000000;
+    stroke-width: 4px;
+    stroke-linecap: round;
 }
 
-.invisivel {
-    opacity: 0;
-    transform: scale(0);
-    transition: 400ms;
-}
-*/
+
+

@@ -1,6 +1,8 @@
 function loadHome() {
     console.log("loadHome");
-
+    var inputsErrados = []; 
+    var inputsCertos = [];
+    
     let sectionHome = document.getElementById("sec-home");
     sectionHome.classList.remove('invisivel');
     sectionHome.classList.add('visivel');
@@ -45,5 +47,5 @@ function loadNewWord() {
     sectionGame.classList.remove('visivel');
     sectionGame.classList.add('invisivel');
 
-    document.getElementById('umaNovaPalavra').focus(); 
+    document.getElementById("umaNovaPalavra").focus(); 
 }

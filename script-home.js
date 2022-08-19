@@ -12,10 +12,18 @@ function isLetra(codigoL) {
 }
 
 function estructureGame() {
+    let botoesStart = document.getElementById("botoes-start");
+    botoesStart.classList.remove('visivel');
+    botoesStart.classList.add('invisivel');
+
+    let botoesGame = document.getElementById("botoes-game");
+    botoesGame.classList.remove('invisivel');
+    botoesGame.classList.add('visivel');
+
     palavraSecreta = raffleWord();
     qtdletters = palavraSecreta.length;
     console.log(qtdletters);
-    //paintForca();
+    canvaMadeira();
     game();
 }
 
@@ -31,7 +39,6 @@ function addNewWord(palavraValidada) {
     bancoPalavras.push(novaPalavra);
     // console.log(bancoPalavras);
     alert("Palavra inserida!");
-    document.getElementById("umaNovaPalavra").value = '';
     loadHome();
 }
 
