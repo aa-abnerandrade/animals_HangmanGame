@@ -16,7 +16,7 @@
     <!-- CABEÇALHO -->
     <header> 
         <div id="div-cabecalho">
-            <img src="imagens/logo_alura.png" alt="Logo Alura, Letra A">
+            <img src="imagens/logo_alura.png" alt="Logo Alura, Letra A" height="50">
         </div>
     </header>
 
@@ -30,13 +30,12 @@
             <!-- INICIAL -->  
             <section class="visivel" id="sec-home"> <!-- SEÇÃO HOME-->
                 <button onclick="loadGame()">Novo Jogo</button>
-    
                 <button onclick="loadNewWord()">Adicionar Palavra</button>
             </section> 
 
             <section class="invisivel" id="sec-game"> <!-- SEÇÃO GAME-->
                 <section id="area-tabuleiro">
-                    <canvas height="200" width="400" id="desenho-forca">
+                    <canvas height="200" width="400" id="desenho-forca" class="invisivel">
                         
                     </canvas>
                 </section>
@@ -44,7 +43,7 @@
                 <div id="container-PalavraSecreta">
                 </div>
                 
-                <div id="container-LetrasErradas">
+                <div id="container-LetrasErradas" class="invisivel">
                     <p>Letras erradas</p>
                 </div>
 
@@ -53,12 +52,12 @@
                 </div>
 
 
-                <div id="botoes-start" class="visivel">
+                <div id="c-botoes-start" class="visivel">
                     <button onclick="estructureGame()">Começar</button>
                     <button onclick="loadHome()">Voltar</button>
                 </div>
 
-                <div id="botoes-game" class="invisivel">
+                <div id="c-botoes-game" class="invisivel">
                     <button onclick="estructureGame()">Reiniciar Jogo</button>
                     <button onclick="loadHome()">Desistir</button>
                 </div>
@@ -75,12 +74,14 @@
 
             <section class="invisivel" id="sec-newword"> <!-- NOVA PALAVRA-->
                 <input type="text" name="palavra-add" id="umaNovaPalavra" placeholder="Digite uma palavra" maxlength="10">
-                <p>⚠ Maximo de 10 letras, A-Z</p>
+                
+                <p id="aviso-restricao-newword">⚠ Maximo de 10 letras, A-Z</p>
                 
                 <hr>
-                <button onclick="validateNewWord()">Salvar</button>
-                <button onclick="loadHome()">Voltar</button>
-
+                <div id="c-botoes-newword">
+                    <button onclick="loadHome()">Voltar</button>
+                    <button onclick="validateNewWord()">Salvar</button>
+                </div>
             </section>
 
         </div>
@@ -93,8 +94,8 @@
         <div id="div-rodape">
 
             <div id="links-contato">
-                <a href="https://github.com/aa-abnerandrade" target="_blank" ><img src="imagens/github150.png" alt="Logotipo do Github"></a>
-                <a href="https://www.linkedin.com/in/abnerandrade/" target="_blank"><img src="imagens/linkedin150.png" alt="Logotipo do Linkedin"></a>
+                <a href="https://github.com/aa-abnerandrade" target="_blank" ><img src="imagens/github150.png" alt="Logotipo do Github" width="50" height="50"></a>
+                <a href="https://www.linkedin.com/in/abnerandrade/" target="_blank"><img src="imagens/linkedin150.png" alt="Logotipo do Linkedin" width="50" height="50"></a>
             </div>
 
             <div id="creditos">

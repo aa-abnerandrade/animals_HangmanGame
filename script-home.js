@@ -12,13 +12,21 @@ function isLetra(codigoL) {
 }
 
 function estructureGame() {
-    let botoesStart = document.getElementById("botoes-start");
+    let botoesStart = document.getElementById("c-botoes-start");
     botoesStart.classList.remove('visivel');
     botoesStart.classList.add('invisivel');
 
-    let botoesGame = document.getElementById("botoes-game");
+    let botoesGame = document.getElementById("c-botoes-game");
     botoesGame.classList.remove('invisivel');
     botoesGame.classList.add('visivel');
+
+    let areaForca = document.querySelector("canvas");
+    areaForca.classList.remove('invisivel');
+    areaForca.classList.add('visivel');
+
+    let areaLetrasErradas = document.getElementById("container-LetrasErradas");
+    areaLetrasErradas.classList.remove('invisivel');
+    areaLetrasErradas.classList.add('visivel');
 
     palavraSecreta = raffleWord();
     qtdletters = palavraSecreta.length;

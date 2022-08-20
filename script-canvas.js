@@ -17,11 +17,11 @@ function canvaMadeira() {
   // tela.height = tela.width * heightRadius;
 
   // MADEIRA
-  pincel.fillStyle = '#102538'
+  pincel.fillStyle = '#0A3871'
   pincel.fillRect(10, 10, 10, 180)
-  pincel.fillStyle = '#102538'
+  pincel.fillStyle = '#0A3871'
   pincel.fillRect(10, 10, 100, 10)
-  pincel.fillStyle = '#102538'
+  pincel.fillStyle = '#0A3871'
   pincel.fillRect(110, 10, 10, 20)
 }
 
@@ -29,17 +29,18 @@ function canvaMadeira() {
 function canvaCabeca() {
   var tela = document.querySelector('canvas');
   var pincel = tela.getContext('2d');
-  pincel.strokeStyle = '#102538'
-  pincel.beginPath()
-  pincel.arc(115, 60, 20, 0, 10*Math.PI)
-  pincel.fill()
+  pincel.fillStyle = '#0A3871';
+  pincel.strokeStyle = '#0A3871';
+  pincel.beginPath();
+  pincel.arc(115, 60, 20, 0, 10*Math.PI);
+  pincel.fill();
 }
 
 //TRONCO 
 function canvaTronco() {
   var tela = document.querySelector('canvas');
   var pincel = tela.getContext('2d');
-  pincel.fillStyle = '#102538'
+  pincel.fillStyle = '#0A3871'
   pincel.fillRect(112, 80, 3, 80)
 }
 
@@ -47,7 +48,7 @@ function canvaTronco() {
 function canvaBracoE() {
   var tela = document.querySelector('canvas');
   var pincel = tela.getContext('2d');
-  pincel.fillStyle = '#102538'
+  pincel.fillStyle = '#0A3871'
   pincel.beginPath()
   pincel.moveTo(115, 91)
   pincel.lineTo(145, 110)
@@ -59,7 +60,7 @@ function canvaBracoE() {
 function canvaBracoD() {
   var tela = document.querySelector('canvas');
   var pincel = tela.getContext('2d');
-  pincel.fillStyle = '#102538'
+  pincel.fillStyle = '#0A3871'
   pincel.beginPath()
   pincel.moveTo(113, 90)
   pincel.lineTo(85, 110)
@@ -71,7 +72,7 @@ function canvaBracoD() {
 function canvaPernaE() {
   var tela = document.querySelector('canvas');
   var pincel = tela.getContext('2d');
-  pincel.fillStyle = '#102538'
+  pincel.fillStyle = '#0A3871'
   pincel.beginPath()
   pincel.moveTo(115, 160)
   pincel.lineTo(150, 178)
@@ -83,7 +84,7 @@ function canvaPernaE() {
 function canvaPernaD() {
   var tela = document.querySelector('canvas');
   var pincel = tela.getContext('2d');
-  pincel.fillStyle = '#102538'
+  pincel.fillStyle = '#0A3871'
   pincel.beginPath()
   pincel.moveTo(78, 178)
   pincel.lineTo(112, 160)
