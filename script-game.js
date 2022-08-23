@@ -76,6 +76,8 @@ function game() {
                 } else {
                     inputsErrados.push(letraDigitada);
                     console.log("Letra sobe para inputsErrados");
+                    // INCLUIR FUNÇÃO DE PINTAR FORCA
+                    console.log('Incluir Função para Pintar Forca');
                 }
             }
     updateGame();
