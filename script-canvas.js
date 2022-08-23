@@ -1,15 +1,3 @@
-funcoesCanva = [canvaCabeca(), canvaTronco(), canvaBracoE(), canvaBracoD(), canvaPernaE(), canvaPernaD()]
-console.log(funcoesCanva.length, "QTD Membros");
-
-function paintForca() {
-  console.log("Até Paint Forca");
-
-  for (let cont = 0; cont < inputsErrados.length; cont++) {
-    funcoesCanva[cont];
-    //console.log("Contador de membrosForca: ", cont);
-  }
-}
-
 function canvaMadeira() {
   var tela = document.querySelector('canvas');
   var pincel = tela.getContext('2d');
@@ -29,7 +17,6 @@ function canvaMadeira() {
 function canvaCabeca() {
   var tela = document.querySelector('canvas');
   var pincel = tela.getContext('2d');
-  pincel.fillStyle = '#0A3871';
   pincel.strokeStyle = '#0A3871';
   pincel.beginPath();
   pincel.arc(115, 60, 20, 0, 10*Math.PI);
@@ -90,5 +77,33 @@ function canvaPernaD() {
   pincel.lineTo(112, 160)
   pincel.closePath()
   pincel.stroke()
+}
+
+function paintForca() {
+  console.log("Até Paint Forca");
+  
+  let qtdTentadas = inputsErrados.length;
+  console.log(qtdTentadas);
+
+  switch (qtdTentadas) {
+    case 1:
+      canvaCabeca();
+      break;
+    case 2:
+      canvaTronco();
+      break;
+    case 3:
+      canvaBracoE();
+      break;
+    case 4:
+      canvaBracoD();
+      break;
+    case 5:
+      canvaPernaE();
+      break;
+    case 6:
+      canvaPernaD();
+      break;
+  }
 }
 

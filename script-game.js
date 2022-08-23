@@ -1,3 +1,4 @@
+var qtdTotalTentativas = 6;
 var inputsErrados = []; 
 var inputsCertos = [];
 
@@ -35,7 +36,7 @@ function checkGame() {
     let advEndGame = '';
     let areaPS = document.querySelector('#container-PalavraSecreta');
 
-    if (inputsErrados.length == funcoesCanva.length) {
+    if (inputsErrados.length == qtdTotalTentativas) {
         advEndGame = "Que pena, você perdeu!";
     }
 
